@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
+@interface ViewController : UIViewController<UIWebViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIWebView *mainWebView;
+
+-(IBAction)takePhoto:(id)sender;
+-(IBAction)takeLibrary:(id)sender;
+-(IBAction)go2Webview:(id)sender;
 
 @end
 

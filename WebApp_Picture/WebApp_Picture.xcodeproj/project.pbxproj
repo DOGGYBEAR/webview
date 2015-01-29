@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09369A861A78DE350084F5CF /* vcMainWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09369A851A78DE350084F5CF /* vcMainWebView.m */; };
+		09639D621A78BE9400EB8092 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09639D611A78BE9400EB8092 /* UIKit.framework */; };
+		09639D641A78BE9900EB8092 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09639D631A78BE9900EB8092 /* Foundation.framework */; };
+		09639D661A78BEA500EB8092 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09639D651A78BEA500EB8092 /* CoreGraphics.framework */; };
 		09F541AB1A71E23B0090FB27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F541AA1A71E23B0090FB27 /* main.m */; };
 		09F541AE1A71E23B0090FB27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F541AD1A71E23B0090FB27 /* AppDelegate.m */; };
 		09F541B11A71E23B0090FB27 /* WebApp_Picture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09F541AF1A71E23B0090FB27 /* WebApp_Picture.xcdatamodeld */; };
@@ -15,6 +19,7 @@
 		09F541B91A71E23B0090FB27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F541B81A71E23B0090FB27 /* Images.xcassets */; };
 		09F541BC1A71E23B0090FB27 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F541BA1A71E23B0090FB27 /* LaunchScreen.xib */; };
 		09F541C81A71E23B0090FB27 /* WebApp_PictureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F541C71A71E23B0090FB27 /* WebApp_PictureTests.m */; };
+		09F541D51A7237EE0090FB27 /* PrinterIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F541D41A7237EE0090FB27 /* PrinterIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09369A841A78DE350084F5CF /* vcMainWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcMainWebView.h; sourceTree = "<group>"; };
+		09369A851A78DE350084F5CF /* vcMainWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcMainWebView.m; sourceTree = "<group>"; };
+		09639D611A78BE9400EB8092 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09639D631A78BE9900EB8092 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09639D651A78BEA500EB8092 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		09F541A51A71E23B0090FB27 /* WebApp_Picture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebApp_Picture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F541A91A71E23B0090FB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09F541AA1A71E23B0090FB27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +52,7 @@
 		09F541C11A71E23B0090FB27 /* WebApp_PictureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebApp_PictureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F541C61A71E23B0090FB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09F541C71A71E23B0090FB27 /* WebApp_PictureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebApp_PictureTests.m; sourceTree = "<group>"; };
+		09F541D41A7237EE0090FB27 /* PrinterIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PrinterIcon.png; path = ../PrinterIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09639D661A78BEA500EB8092 /* CoreGraphics.framework in Frameworks */,
+				09639D641A78BE9900EB8092 /* Foundation.framework in Frameworks */,
+				09639D621A78BE9400EB8092 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +76,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09639D671A78BEAB00EB8092 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				09639D651A78BEA500EB8092 /* CoreGraphics.framework */,
+				09639D631A78BE9900EB8092 /* Foundation.framework */,
+				09639D611A78BE9400EB8092 /* UIKit.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 		09F5419C1A71E23A0090FB27 = {
 			isa = PBXGroup;
 			children = (
 				09F541A71A71E23B0090FB27 /* WebApp_Picture */,
 				09F541C41A71E23B0090FB27 /* WebApp_PictureTests */,
 				09F541A61A71E23B0090FB27 /* Products */,
+				09639D671A78BEAB00EB8092 /* Framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,10 +108,13 @@
 		09F541A71A71E23B0090FB27 /* WebApp_Picture */ = {
 			isa = PBXGroup;
 			children = (
+				09F541D41A7237EE0090FB27 /* PrinterIcon.png */,
 				09F541AC1A71E23B0090FB27 /* AppDelegate.h */,
 				09F541AD1A71E23B0090FB27 /* AppDelegate.m */,
 				09F541B21A71E23B0090FB27 /* ViewController.h */,
 				09F541B31A71E23B0090FB27 /* ViewController.m */,
+				09369A841A78DE350084F5CF /* vcMainWebView.h */,
+				09369A851A78DE350084F5CF /* vcMainWebView.m */,
 				09F541B51A71E23B0090FB27 /* Main.storyboard */,
 				09F541B81A71E23B0090FB27 /* Images.xcassets */,
 				09F541BA1A71E23B0090FB27 /* LaunchScreen.xib */,
@@ -171,6 +199,7 @@
 				TargetAttributes = {
 					09F541A41A71E23B0090FB27 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = G2PT6ZAX84;
 					};
 					09F541C01A71E23B0090FB27 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -205,6 +234,7 @@
 				09F541B71A71E23B0090FB27 /* Main.storyboard in Resources */,
 				09F541BC1A71E23B0090FB27 /* LaunchScreen.xib in Resources */,
 				09F541B91A71E23B0090FB27 /* Images.xcassets in Resources */,
+				09F541D51A7237EE0090FB27 /* PrinterIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +254,7 @@
 			files = (
 				09F541AE1A71E23B0090FB27 /* AppDelegate.m in Sources */,
 				09F541B11A71E23B0090FB27 /* WebApp_Picture.xcdatamodeld in Sources */,
+				09369A861A78DE350084F5CF /* vcMainWebView.m in Sources */,
 				09F541B41A71E23B0090FB27 /* ViewController.m in Sources */,
 				09F541AB1A71E23B0090FB27 /* main.m in Sources */,
 			);
@@ -416,6 +447,7 @@
 				09F541CD1A71E23B0090FB27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09F541CE1A71E23B0090FB27 /* Build configuration list for PBXNativeTarget "WebApp_PictureTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +456,7 @@
 				09F541D01A71E23B0090FB27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
